@@ -1,0 +1,27 @@
+@host = http://localhost:2022
+
+GET {{host}}
+Accept: application/json
+
+### POST Tareas
+
+POST {{host}}/tareas
+Content-Type: application/json
+
+{
+    "Id": 12,
+    "Titulo": "Hacer el TP de programacion",
+    "Completada": true
+
+}
+
+###
+GET {{host}}/tareas/12
+Accept: application/json
+
+### Delete
+
+DELETE {{host}}/tareas/12
+
+
+###

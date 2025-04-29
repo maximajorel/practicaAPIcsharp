@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/calse23abril.props" />
+</Project>
