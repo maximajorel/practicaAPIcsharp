@@ -1,35 +1,69 @@
+using System.Text.Json;
+
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+
 app.MapGet("/", () => "Servidor en funcionamiento");
+
+var jsonTareas = "./tareas.json";
+List<Tarea> tareas = File.Exists(jsonTareas) ? JsonSerializer.Deserialize<List<Tarea>>(File.ReadAllText(jsonTareas)) : new List<Tarea>();
+
+// Mostrar todas las tareas
+app.MapGet("/tareas", () =>
+{
+
+    return Results.Ok(tareas);
+
+});
+
 
 app.MapGet("/tareas/{id:int}", (int id) =>
 {
+    if (tareas == null)
+    {
+        return Results.NotFound("La lista de tareas no existe.");
+    }
 
-    return Results.Ok($"Se ha solicitado la tarea con id {id}");
+    var tareaSeleccionada = tareas.FirstOrDefault(t => t.Id == id);
+    if (tareaSeleccionada == null)
+    {
+        return Results.NotFound($"No se encontró la tarea con ID {id}");
+    }
 
+    return Results.Ok(tareaSeleccionada);
 });
 
 
-app.MapGet("/tareas/", (int id) =>
+
+
+
+app.MapPost("/tareas", (Tarea nuevaTarea) =>
 {
-
-    return Results.Ok($"Se ha solicitado la tarea con id {id}");
-
+    if (tareas == null)
+    {
+        tareas = new List<Tarea>();
+    }
+    if (tareas.Any(t => t.Id == nuevaTarea.Id))
+    {
+        return Results.Conflict($"Ya existe una tarea con ID {nuevaTarea.Id}");
+    }
+    tareas.Add(nuevaTarea);
+    File.WriteAllText(jsonTareas, JsonSerializer.Serialize(tareas));
+    return Results.Created($"/tareas/{nuevaTarea.Id}", nuevaTarea);
 });
-
 
 app.MapDelete("/tareas/{id:int}", (int id) =>
 {
-    return Results.Ok($"Se eliminó la tarea con ID {id}");
-});
-
-
-app.MapPost("/tareas", (Tarea nuevo) =>
-{
-
-    return Results.Ok($"Se ha creado la tarea {nuevo.Titulo} con id {nuevo.Id}, su estado inicial es {nuevo.Completada}");
-
+    var tareaAEliminar = tareas.FirstOrDefault(t => t.Id == id);
+    if (tareaAEliminar == null)
+    {
+        return Results.NotFound($"No se encontró la tarea con ID {id}");
+    }
+    tareas.Remove(tareaAEliminar);
+    File.WriteAllText(jsonTareas, JsonSerializer.Serialize(tareas));
+    return Results.Ok();
 });
 
 app.Run();

@@ -75,25 +75,30 @@
     ]
   },
   "packageFolders": {
-    "/home/maxi-majorel/.nuget/packages/": {}
+    "C:\\Users\\maxim\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/maxi-majorel/Documentos/Facultad/Materias/Programacion III/clase23abril/calse23abril.csproj",
-      "projectName": "calse23abril",
-      "projectPath": "/home/maxi-majorel/Documentos/Facultad/Materias/Programacion III/clase23abril/calse23abril.csproj",
-      "packagesPath": "/home/maxi-majorel/.nuget/packages/",
-      "outputPath": "/home/maxi-majorel/Documentos/Facultad/Materias/Programacion III/clase23abril/obj/",
+      "projectUniqueName": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj",
+      "projectName": "clase23abril",
+      "projectPath": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj",
+      "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/maxi-majorel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -112,7 +117,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -142,7 +147,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

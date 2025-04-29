@@ -9,13 +9,16 @@ POST {{host}}/tareas
 Content-Type: application/json
 
 {
-    "Id": 12,
-    "Titulo": "Hacer el TP de programacion",
-    "Completada": true
+    "Id": 14,
+    "Titulo": "Prueba",
+    "Completada": false
 
 }
+### Get Todas las tareas
+GET {{host}}/tareas
+Accept: application/json
 
-###
+### Get Una tarea
 GET {{host}}/tareas/12
 Accept: application/json
 

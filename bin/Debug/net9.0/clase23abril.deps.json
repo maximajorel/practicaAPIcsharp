@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "calse23abril/1.0.0": {
+      "clase23abril/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "9.0.4"
         },
         "runtime": {
-          "calse23abril.dll": {}
+          "clase23abril.dll": {}
         }
       },
       "Microsoft.AspNetCore.OpenApi/9.0.4": {
@@ -36,7 +36,7 @@
     }
   },
   "libraries": {
-    "calse23abril/1.0.0": {
+    "clase23abril/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

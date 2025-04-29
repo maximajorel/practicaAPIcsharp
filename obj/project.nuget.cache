@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WNZ0Km1SQB0=",
+  "dgSpecHash": "6xR+U1DbpkA=",
   "success": true,
-  "projectFilePath": "/home/maxi-majorel/Documentos/Facultad/Materias/Programacion III/clase23abril/calse23abril.csproj",
+  "projectFilePath": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj",
   "expectedPackageFiles": [
-    "/home/maxi-majorel/.nuget/packages/microsoft.aspnetcore.openapi/9.0.4/microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
-    "/home/maxi-majorel/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }

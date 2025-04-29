@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\calse23abril.csproj": {}
+    "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj": {}
   },
   "projects": {
-    "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\calse23abril.csproj": {
+    "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\calse23abril.csproj",
-        "projectName": "calse23abril",
-        "projectPath": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\calse23abril.csproj",
+        "projectUniqueName": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj",
+        "projectName": "clase23abril",
+        "projectPath": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\clase23abril.csproj",
         "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
         "outputPath": "D:\\Facultad\\Programacion III\\Trabajos Practicos\\practicaAPIcsharp\\obj\\",
         "projectStyle": "PackageReference",
@@ -25,7 +25,7 @@
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
